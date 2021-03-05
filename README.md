@@ -17,13 +17,15 @@ Happy Hacking!! 👩‍💻👨‍💻
 Back end:
 
 Main features/ideas:
+
 - create a joint account of Heroku
-- Think about what information our database will have 
+- Think about what information our database will have
 - create a table using postgres and populate it
 - run a new api
 - storing users notes in our database as well
 
 Files:
+
 - Base repository (connecting to our heroku database, storing our environmental variables on the terminal)
 - IRepository (the contract)
 - Recipe Controller (takes in HTTP request, Get, GetAll, Post/Insert, Delete, Update)
@@ -34,13 +36,15 @@ Files:
 
 Front end:
 
-- Create react app 
+- Create react app
 
 Components
+
 - App (Front Page, linked to the comps )
 - Button (generate a random recipe)
 - List (store our recipes, useEffect?)
-- Write a simple jest test 
+- Write a simple jest test
 
+Front End deeper...
 
-
+-

@@ -14,7 +14,7 @@ function App() {
   
   return (
     <div>
-    <button onClick = {(e) => handleClick(e.target.value)}>Get your Recipe</button>
+    <button id='button' onClick = {(e) => handleClick(e.target.value)}>Get your Recipe</button>
     <Recipe id = {id}/>
     </div>
   );
