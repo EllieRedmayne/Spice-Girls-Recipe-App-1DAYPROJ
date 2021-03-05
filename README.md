@@ -32,3 +32,15 @@ Files:
 - Recipe Repository (connecting to our database and controller)
 - Write simple test (test Get?)
 
+Front end:
+
+- Create react app 
+
+Components
+- App (Front Page, linked to the comps )
+- Button (generate a random recipe)
+- List (store our recipes, useEffect?)
+- Write a simple jest test 
+
+
+
