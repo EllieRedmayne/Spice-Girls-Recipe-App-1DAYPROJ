@@ -6,7 +6,7 @@ function App() {
   
   const [id, setId] = useState();
 
-  let randomRecipe;
+  let randomRecipe = 2;
 
   function handleClick(){
      randomRecipe= Math.floor(Math.random()*4) + 1; 

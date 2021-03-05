@@ -2,17 +2,12 @@ import React, {useState, useEffect} from "react";
 import "../App/App.css";
 
 function Recipe({id}){
-    const[Recipe,setRecipe]= useState("Spice up your meals with Recipes not stressipes");
-    const [Method, setMethod] = useState()
-    const [Author, setAuthor] = useState()
-    const [Time, setTime] = useState()
+    const[Recipe,setRecipe]= useState("Spice up your meal");
+    const [Method, setMethod] = useState("Spice up your meal")
+    const [Author, setAuthor] = useState("Spice up your meal")
+    const [Time, setTime] = useState("Spice up your meal")
     
-useEffect(() => {
-        // async function getRecipe(){
-        // let res = await fetch ("https://localhost:5001/recipes");
-        // let data = await res.json();
-        // console.log(data.Method)}
-    
+    useEffect(() => {
         getRecipe();
 }, [id]);
 
@@ -30,10 +25,12 @@ async function getRecipe(){
 
     return (
         <div >
-            {Recipe}
-            {Method}
-            {Author}
-            {Time}
+            <ul>
+           <li> {Recipe} </li>
+           <li>{Method} </li> 
+            {/* {Author} */}
+           <li> {Time} hours to make</li>
+            </ul>
         </div>
     )
 }
