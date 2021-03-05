@@ -9,7 +9,7 @@ function App() {
   let randomRecipe;
 
   function handleClick(){
-    randomRecipe= Math.floor (Math.random( )*Math.floor()) 
+     randomRecipe= Math.floor(Math.random()*4) + 1; 
      setId(randomRecipe);
      console.log(randomRecipe)
   }
@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
     <button id='button' onClick = {(e) => handleClick(e.target.value)}>Get your Recipe</button>
-    <Recipe id = {id} randomRecipe={randomRecipe}/>
+    <Recipe id = {id}/>
     </div>
   );
 }
