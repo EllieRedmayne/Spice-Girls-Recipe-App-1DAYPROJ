@@ -1,13 +1,31 @@
 import React, {useState, useEffect} from "react";
 import "../App/App.css";
 
-function Recipe(){
+function Recipe({id} ){
+    const[Recipe,setRecipe]= useState();
 
-    return(
-        <div>
-            <h1>hi</h1>
+useEffect(() => {
+getRecipe();
+
+    }, [id]);
+
+    async function getRecipe(){
+let res = await fetch ( insert url here,{
+    headers: {},
+});
+let data = await res.json();
+setRecipe(data.recipe);
+    }
+
+
+    }
+
+    return (
+        <div  >
+            {recipe}
+            <List getRecipe={recipe}/>
         </div>
     )
-}
+
 
 export default Recipe;
