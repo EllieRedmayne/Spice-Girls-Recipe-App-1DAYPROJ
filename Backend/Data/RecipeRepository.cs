@@ -13,4 +13,10 @@ public class RecipeRepository : BaseRepository, IRepository<Recipe>
         return await connection.QueryAsync<Recipe>("SELECT * FROM Recipes ORDER BY id;");
     }
 
+    public Recipe Get(long id)
+    {
+        using var connection = CreateConnection();
+        return connection.QuerySingle<Recipe>("SELECT * FROM Recipes WHERE Id = @Id;", new { Id = id });
+    }
+
 }
