@@ -15,7 +15,10 @@ function App() {
   }
   
   return (
-    <div>
+    <div id="App">
+      <h1>SPICE UP YOUR LIFE</h1>
+      <h2>Make any meal spicey</h2>
+      <img src="https://files.slack.com/files-pri/T6L933W4X-F01R19RFE1W/spice_girls__1_.png" width='600px'></img><br/>
     <button id='button' onClick = {(e) => handleClick(e.target.value)}>Get your Recipe</button>
     <Recipe id = {id}/>
     </div>
