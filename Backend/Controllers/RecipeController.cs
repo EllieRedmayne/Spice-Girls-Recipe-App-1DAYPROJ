@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Backend.Controllers
-{
+
     [ApiController]
-    [Route("Recipes")]
+    [Route("recipes")]
     public class RecipeController : ControllerBase
     {
         private readonly IRepository<Recipe> _recipeRepository;
@@ -30,4 +29,4 @@ namespace Backend.Controllers
             }
         }    
     }
-}
+

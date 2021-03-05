@@ -1,7 +1,5 @@
 using System;
 
-namespace Backend
-{
     public class Recipe
     {
         public long? Id { get; set; }
@@ -11,4 +9,4 @@ namespace Backend
         public int TimeTaken { get; set; }
 
     }
-}
+

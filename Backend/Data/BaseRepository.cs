@@ -17,7 +17,7 @@ public class BaseRepository
         var stringBuilder = new NpgsqlConnectionStringBuilder
         {
             //when doing secrets, remember to add configuration
-            Host = "ec2 - 176 - 34 - 222 - 188.eu - west - 1.compute.amazonaws.com",
+            Host = "ec2-176-34-222-188.eu-west-1.compute.amazonaws.com",
             Database = "ddb96jnelsq12j",
             Username = "xowpvzohbuljhy",
             //remember to add Int32.Parse() when adding secrets later
