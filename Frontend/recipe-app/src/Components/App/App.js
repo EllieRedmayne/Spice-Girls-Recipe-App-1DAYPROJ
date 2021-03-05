@@ -7,7 +7,7 @@ function App() {
   const [id, setId] = useState();
 
   function handleClick(){
-    let randomRecipe=  Math.floor(Math.random( )* Math.floor(10)) 
+    let randomRecipe=  Math.floor(Math.random( )* Math.floor(5)) 
      setId(randomRecipe);
      console.log(randomRecipe)
   }
