@@ -6,8 +6,10 @@ function App() {
   
   const [id, setId] = useState();
 
+  let randomRecipe;
+
   function handleClick(){
-    let randomRecipe=  Math.floor(Math.random( )* Math.floor(5)) 
+    randomRecipe= Math.floor (Math.random( )*Math.floor()) 
      setId(randomRecipe);
      console.log(randomRecipe)
   }
@@ -15,7 +17,7 @@ function App() {
   return (
     <div>
     <button id='button' onClick = {(e) => handleClick(e.target.value)}>Get your Recipe</button>
-    <Recipe id = {id}/>
+    <Recipe id = {id} randomRecipe={randomRecipe}/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "../App/App.css";
 
-function Recipe({id} ){
+function Recipe({id, randomRecipe} ){
     const[Recipe,setRecipe]= useState("Spice up your meals with Recipes not stressipes");
     
 useEffect(() => {
@@ -14,9 +14,10 @@ useEffect(() => {
 }, [id]);
 
 async function getRecipe(){
-    let res = await fetch ("http://localhost:5000/recipes");
+    let res = await fetch (`http://localhost:5000/recipes/${id}`);
     let data = await res.json();
-    console.log(data[0].method)}  
+    console.log(data);}
+   // console.log(data[0]);}  
 
 
     return (
